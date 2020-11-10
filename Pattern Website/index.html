@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+    <!-- only one line of css => make style tag -->
+    <style>
+        #header {
+            background: url("imgs/header.jpeg"); /* Looks better 
+           
+            background: url("imgs/header.jpeg") center center/ cover no-repeat;  => center horiz and vert then cover whole display with no repeate of img */  
+        }
+    </style>
+
+    <title>Pattern</title>
+</head>
+
+<body>
+    <!-- make a dark navbar with light text (using the misnomer: navbar-dark) -->
+    <nav class="navbar bg-dark navbar-dark">
+        <div class="container">
+            <a href="" class="navbar-brand"> <i class="fas fa-binoculars"> </i>Pattern</a>
+        </div>
+    </nav> 
+
+    <!-- create a jubotron -->
+    <!-- section vs div: https://stackoverflow.com/questions/6939864/what-is-the-difference-between-section-and-div -->
+    <section id="header" class="jumbotron text-center">
+        <!-- display-3 makes h1 slightly larger -->
+        <h1 class="display-3">PATTERN COLLECTION</h1>
+
+        <!-- lead gives text extra space and lets it stand out a bit more-->
+        <p class="lead"> All you favorite patterns in one convient and intuitive web-library </p>
+
+        <!-- create buttons as ancher tags since they likely will renavigate you -->
+        <a href="" class="btn btn-primary">My Profile</a>
+        <a href="" class="btn btn-success">My Favorites</a>
+    </section>
+
+    <!-- place everything in a section that encompasses all of the gallery -->
+    <!-- since cards going to be in grid sys, place al cards in a container div  -->
+    <!-- to make grid need an umbrella div class with col div elements that have cards in them -->
+    <section id="gallery">  
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="imgs/pattern1.jpeg">
+                        <div class="card-body">
+                            <h5 class="card-title">First Pattern</h5>
+                            <p class="card-text text-center"> This pattern is chaotic and contains unpredictabe sequences and spacings of the white sections in respect to the other colors. Stepping away from any small part of the image makes the pattern seem much more beautiful!</p>
+
+                            <a href="" class="btn btn-outline-success btn-sm">Download</a>
+                            <a href="" class="btn btn-outline-danger btn-sm"> <i class="far fa-heart"></i> </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="imgs/pattern2.jpeg">
+                        <div class="card-body">
+                            <h5 class="card-title">Second Pattern</h5>
+                            <p class="card-text text-center"> This pattern is a classic square tile pattern with a twist (literally)! The unpredictable topology of this pattern is what makes it very intersting to look at. Additionally, the rendering of the pattern utlilies light as an added aspect of the pattern.</p>
+
+                            <a href="" class="btn btn-outline-success btn-sm">Download</a>
+                            <a href="" class="btn btn-outline-danger btn-sm"> <i class="far fa-heart"></i> </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="imgs/pattern3.jpeg">
+                        <div class="card-body">
+                            <h5 class="card-title">Third Pattern</h5>
+                            <p class="card-text text-center"> This pattern is essentially rectangular glass stains. Its significance is brought by the use of primiary and secondary colors in the given selection. As a result this pattern even more pronounced with the clear blue sky in the background.</p>
+
+                            <a href="" class="btn btn-outline-success btn-sm">Download</a>
+                            <a href="" class="btn btn-outline-danger btn-sm"> <i class="far fa-heart"></i> </a>
+                        </div>
+                    </div>
+               </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

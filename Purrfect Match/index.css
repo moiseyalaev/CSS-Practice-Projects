@@ -1,0 +1,13 @@
+body {
+    background: url(https://images.unsplash.com/photo-1415369629372-26f2fe60c467?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60);
+    background-size: cover;
+    background-position: center;
+}
+
+#content {
+    text-align: center;
+    padding-top: 25%;
+    text-color: white;
+}
+
+.navbar-toggler {}
